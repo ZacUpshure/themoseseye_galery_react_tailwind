@@ -86,7 +86,6 @@ const Home = () => {
             {/* <h1>Categories</h1> */}
             <div className="bg-white">
         <div className="  lg:mx-auto lg:max-w-7xl lg:px-8">
-            <BannerCanvas />
             <div className="flex items-center justify-between px-4 sm:px-6 lg:px-0">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900">See our Previous Work!</h2>
             <a href="#" className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
@@ -119,7 +118,7 @@ const Home = () => {
             </div>
         </div>
         </div>
-        <h1>LoadMore</h1>
+        <BannerCanvas />
         {selectedArtwork && (
             <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} artwork={selectedArtwork} />
         )}

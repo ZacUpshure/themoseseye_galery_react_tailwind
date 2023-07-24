@@ -20,14 +20,14 @@ const BannerCanvas = () => {
             <div>
               <h2 className="text-xl font-bold text-white">Our Collection</h2>
               <p className="mt-1 text-sm text-gray-300">
-                Upgrade your desk with objects that keep you organized and clear-minded.
+                Here are all our projects that we made for our clients so we can provide an insight for what we can deliver and why our services are ideal for increasing quality of marketing and sales eventually. 
               </p>
             </div>
             <a
-              href="#"
+              href="https://www.themoseseye.com/"
               className="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25 bg-white bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full"
             >
-              View the collection
+              Our Homepage
             </a>
           </div>
         </div>
