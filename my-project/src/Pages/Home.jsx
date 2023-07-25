@@ -15,7 +15,8 @@ const projects = [
       price: '$35',
       href: '#',
     //   imageSrc: 'https://themoseseye-galery-images.s3.eu-central-1.amazonaws.com/Galery-images/OliBaustoffe.png',
-      imageSrc: images.olibaustoffe,
+      thumbnail: images.olibaustoffe,
+      imageSrc: images.olibaustoffe_long,
       imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
       tag: "website",
     },
@@ -26,40 +27,8 @@ const projects = [
       color: 'Black',
       price: '$35',
       href: '#',
+      thumbnail:images.TextAaron,
       imageSrc: images.TextAaron,
-      imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
-      tag: "ux/ui",
-    },
-    {
-      id: 3,
-      name: 'FixEnergy Logo',
-      description: 'Dont compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.',
-      color: 'Black',
-      price: '$35',
-      href: '#',
-      imageSrc: images.fixEnergyOne,
-      imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
-      tag: "ux/ui",
-    },
-    {
-      id: 4,
-      name: 'FixEnergy design and colors',
-      description: 'Dont compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.',
-      color: 'Black',
-      price: '$35',
-      href: '#',
-      imageSrc: images.fixEnergyTwo,
-      imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
-      tag: "ux/ui",
-    },
-    {
-      id: 5,
-      name: 'FixEnergy Business card',
-      description: 'Dont compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.',
-      color: 'Black',
-      price: '$35',
-      href: '#',
-      imageSrc: images.fixEnergyThree,
       imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
       tag: "ux/ui",
     },
@@ -70,9 +39,22 @@ const projects = [
       color: 'Black',
       price: '$35',
       href: '#',
+      thumbnail: images.vw_gti,
       imageSrc: images.vw_gti,
       imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
       tag: "photography",
+    },
+    {
+      id: 7,
+      name: 'FixEngerie Corporate Design',
+      description: 'Dont compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.',
+      color: 'Black',
+      price: '$35',
+      href: '#',
+      thumbnail: images.fixEnergyOne,
+      imageSrc: images.fixEnergyBehance,
+      imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+      tag: "ux/ui",
     },
     // More products...
   ]
@@ -114,7 +96,7 @@ const Home = () => {
                 {filteredProjects.map((project) => (
                     // <ProjectCard id={project.id} imageSrc={project.imageSrc} imageAlt={project.imageAlt} name={project.name}  />
                     <div key={project.id} onClick={() => handleArtworkClick(project)}>
-                        <ProjectCard id={project.id} imageSrc={project.imageSrc} imageAlt={project.imageAlt} name={project.name} />
+                        <ProjectCard id={project.id} imageSrc={project.imageSrc} imageAlt={project.imageAlt} name={project.name} thumbnail={project.thumbnail} />
                     </div>
                 ))}
                 </ul>

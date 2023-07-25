@@ -19,3 +19,16 @@ video {
   height: 100%;
   object-fit: cover;
 }
+
+.long-image-container {
+  /* Set the desired height for the container */
+  height: 800px;
+  /* width: 700px; */
+  /* height: 1600px; */
+  /* Enable vertical scrolling */
+  overflow-y: scroll; 
+}
+
+.long-image {
+  width: 100%; /* Adjust the width as needed */
+}

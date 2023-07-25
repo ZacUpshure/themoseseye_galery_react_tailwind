@@ -27,7 +27,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-const ModalContent = ({artwork}) => {
+const ModalContent = ({id, name, description, imageSrc, imageAlt}) => {
     const [selectedSize, setSelectedSize] = useState(product.sizes[0])
   return (
     <div className="bg-white">
@@ -36,30 +36,12 @@ const ModalContent = ({artwork}) => {
       <div className="lg:max-w-lg lg:self-end">
         <nav aria-label="Breadcrumb">
           <ol role="list" className="flex items-center space-x-2">
-            {/* {product.breadcrumbs.map((breadcrumb, breadcrumbIdx) => (
-              <li key={breadcrumb.id}>
-                <div className="flex items-center text-sm">
-                  <a href={breadcrumb.href} className="font-medium text-gray-500 hover:text-gray-900">
-                    {breadcrumb.name}
-                  </a>
-                  {breadcrumbIdx !== product.breadcrumbs.length - 1 ? (
-                    <svg
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      className="ml-2 h-5 w-5 flex-shrink-0 text-gray-300"
-                    >
-                      <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
-                    </svg>
-                  ) : null}
-                </div>
-              </li>
-            ))} */}
+            <p><a href="/">home</a> / <a href={'#'}>{id}</a></p>
           </ol>
         </nav>
 
         <div className="mt-4">
-          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{artwork.name}</h1>
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{name}</h1>
         </div>
 
         <section aria-labelledby="information-heading" className="mt-4">
@@ -76,7 +58,7 @@ const ModalContent = ({artwork}) => {
           </div>
 
           <div className="mt-4 space-y-6">
-            <p className="text-base text-gray-500">{artwork.description}</p>
+            <p className="text-base text-gray-500">{description}</p>
           </div>
 
           <div className="mt-6 flex items-center">
@@ -88,8 +70,12 @@ const ModalContent = ({artwork}) => {
 
       {/* Product image */}
       <div className="mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center">
-        <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg">
-          <img src={artwork.imageSrc} alt={artwork.imageAlt} className="h-full w-full object-cover object-center" />
+        <div className="aspect-h-1 aspect-w-1  rounded-lg">
+            <div className='long-image-container'>
+                <img src={imageSrc} alt={imageAlt} className=" long-image " />
+
+            </div>
+          {/* <img src={artwork.imageSrc} alt={artwork.imageAlt} className="h-full w-full object-cover object-center long-image" /> */}
         </div>
       </div>
 
