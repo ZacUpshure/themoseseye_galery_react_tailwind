@@ -56,6 +56,91 @@ const projects = [
       imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
       tag: "ux/ui",
     },
+    {
+      id: 8,
+      name: 'Healthpoint Corporate Design',
+      description: 'Dont compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.',
+      color: 'Black',
+      price: '$35',
+      href: '#',
+      thumbnail: images.healthpoint_thumbnail,
+      imageSrc: images.healthpoint,
+      imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+      tag: "ux/ui",
+    },
+    {
+        id: 9,
+        name: 'Seller Corporate Design',
+        description: 'Dont compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.',
+        color: 'Black',
+        price: '$35',
+        href: '#',
+        thumbnail: images.seller_thumbnail,
+        imageSrc: images.seller,
+        imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+        tag: "ux/ui",
+      },
+      {
+        id: 10,
+        name: 'Web Designs',
+        description: 'Dont compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.',
+        color: 'Black',
+        price: '$35',
+        href: '#',
+        thumbnail: images.webdesign_thumbnail,
+        imageSrc: images.webdesign,
+        imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+        tag: "ux/ui",
+      },
+      {
+        id: 11,
+        name: 'Cafe Place Design',
+        description: 'Dont compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.',
+        color: 'Black',
+        price: '$35',
+        href: '#',
+        thumbnail: images.cafeplace_thumbnail,
+        imageSrc: images.cafeplace,
+        imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+        tag: "ux/ui",
+      },
+      {
+        id: 12,
+        name: 'Model Photoschooting',
+        description: 'Dont compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.',
+        color: 'Black',
+        price: '$35',
+        href: '#',
+        thumbnail: images.model_thumbnail,
+        imageSrc: images.model,
+        imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+        tag: "photography",
+      },
+      {
+        id: 13,
+        name: 'Urban Photoschooting',
+        description: 'Dont compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.',
+        color: 'Black',
+        price: '$35',
+        href: '#',
+        thumbnail: images.urban_thumbnail,
+        imageSrc: images.urban,
+        imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+        tag: "photography",
+      },
+      {
+        id: 14,
+        name: 'Sports Photoschooting',
+        description: 'Dont compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.',
+        color: 'Black',
+        price: '$35',
+        href: '#',
+        thumbnail: images.sports_thumbnail,
+        imageSrc: images.sports,
+        imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+        tag: "photography",
+      },
+    
     // More products...
   ]
 
@@ -91,7 +176,7 @@ const Home = () => {
             <div className="relative -mb-6 w-full overflow-x-auto pb-6">
                 <ul
                 role="list"
-                className="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0"
+                className="mx-4 gap-y-8 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0"
                 >
                 {filteredProjects.map((project) => (
                     // <ProjectCard id={project.id} imageSrc={project.imageSrc} imageAlt={project.imageAlt} name={project.name}  />

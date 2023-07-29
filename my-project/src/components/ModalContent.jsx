@@ -3,32 +3,16 @@ import { useState } from 'react'
 import { CheckIcon, QuestionMarkCircleIcon, StarIcon } from '@heroicons/react/20/solid'
 import { RadioGroup } from '@headlessui/react'
 import { ShieldCheckIcon } from '@heroicons/react/24/outline'
+import { BsArrowDownCircle } from 'react-icons/bs'
 
-const product = {
-  name: 'Everyday Ruck Snack',
-  href: '#',
-  price: '$220',
-  description:
-    "Don't compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.",
-  imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-04-featured-product-shot.jpg',
-  imageAlt: 'Model wearing light green backpack with black canvas straps and front zipper pouch.',
-  breadcrumbs: [
-    { id: 1, name: 'Travel', href: '#' },
-    { id: 2, name: 'Bags', href: '#' },
-  ],
-  sizes: [
-    { name: '18L', description: 'Perfect for a reasonable amount of snacks.' },
-    { name: '20L', description: 'Enough room for a serious amount of snacks.' },
-  ],
-}
-const reviews = { average: 4, totalCount: 1624 }
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 const ModalContent = ({id, name, description, imageSrc, imageAlt}) => {
-    const [selectedSize, setSelectedSize] = useState(product.sizes[0])
+    // const [selectedSize, setSelectedSize] = useState(product.sizes[0])
   return (
     <div className="bg-white">
     <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
@@ -71,8 +55,13 @@ const ModalContent = ({id, name, description, imageSrc, imageAlt}) => {
       {/* Product image */}
       <div className="mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center">
         <div className="aspect-h-1 aspect-w-1  rounded-lg">
+            <div className='grid place-items-center'>
+                <div className='animate-bounce w-6 h-6'>
+                    <BsArrowDownCircle />
+                </div>
+            </div>
             <div className='long-image-container'>
-                <img src={imageSrc} alt={imageAlt} className=" long-image" />
+                <img src={imageSrc} alt={imageAlt} className="long-image" />
             </div>
           {/* <img src={artwork.imageSrc} alt={artwork.imageAlt} className="h-full w-full object-cover object-center long-image" /> */}
         </div>
