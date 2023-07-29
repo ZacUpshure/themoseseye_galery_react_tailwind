@@ -72,8 +72,7 @@ const ModalContent = ({id, name, description, imageSrc, imageAlt}) => {
       <div className="mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center">
         <div className="aspect-h-1 aspect-w-1  rounded-lg">
             <div className='long-image-container'>
-                <img src={imageSrc} alt={imageAlt} className=" long-image " />
-
+                <img src={imageSrc} alt={imageAlt} className=" long-image" />
             </div>
           {/* <img src={artwork.imageSrc} alt={artwork.imageAlt} className="h-full w-full object-cover object-center long-image" /> */}
         </div>
